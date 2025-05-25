@@ -453,6 +453,37 @@ body {
     display: block;
   }
 
+  .neon-btn {
+    display: inline-block;
+    padding: 16px 38px;
+    margin-top: 16px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #2d8cff;
+    background: transparent;
+    border: 2px solid #2d8cff;
+    border-radius: 32px;
+    text-decoration: none;
+    letter-spacing: 2px;
+   /* box-shadow: 0 0 20px #2d8cff, 0 0 40px #2d8cff inset;*/
+    text-shadow: 0 0 8px #2d8cff, 0 0 16px #2d8cff;
+    position: relative;
+    transition: color 0.2s, background 0.2s, box-shadow 0.2s;
+    cursor: pointer;
+    overflow: hidden;
+  }
+  
+  .neon-btn:hover, .neon-btn:focus {
+    color: #181a1b;
+   /* background: #2d8cff; */
+    box-shadow: 0 0 40px #2d8cff, 0 0 80px #2d8cff;
+    text-shadow: none;
+    border-color: #2d8cff;
+  }
+  
+  .neon-btn i {
+    margin-right: 10px;
+  }
   
 
   
