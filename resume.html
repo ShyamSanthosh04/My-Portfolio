@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Shyam Santhosh | Resume</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .main-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-top: 48px;
+      gap: 48px;
+    }
+    .resume-left {
+      background: #202127;
+      color: #fff;
+      width: 320px;
+      min-width: 220px;
+      max-width: 350px;
+      border-radius: 18px;
+      box-shadow: 0 4px 24px rgba(0,0,0,0.18);
+      padding: 36px 28px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .resume-left .profile-img {
+      width: 110px;
+      height: 110px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 24px;
+      border: 3px solid #2d8cff;
+      background: #181a1b;
+    }
+    .resume-left h2 {
+      color: #2d8cff;
+      font-size: 1.1rem;
+      margin: 22px 0 8px 0;
+      letter-spacing: 1px;
+      text-align: left;
+      width: 100%;
+    }
+    .resume-left ul {
+      list-style: none;
+      padding: 0;
+      margin: 0 0 16px 0;
+      font-size: 0.99rem;
+      width: 100%;
+    }
+    .resume-left ul li {
+      margin-bottom: 8px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      color: #eaeaea;
+    }
+    .resume-left ul li a {
+      color: #2d8cff;
+      text-decoration: underline;
+      transition: color 0.2s;
+    }
+    .resume-left ul li a:hover {
+      color: #fff;
+    }
+    .resume-left .section-label {
+      font-size: 0.95rem;
+      color: #b0b0b0;
+      margin: 16px 0 6px 0;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+    .resume-left .bar-label {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.97rem;
+      margin-bottom: 2px;
+    }
+    .resume-left .bar-bg {
+      background: #23242a;
+      border-radius: 8px;
+      height: 8px;
+      width: 100%;
+      margin-bottom: 12px;
+      overflow: hidden;
+    }
+    .resume-left .bar-fill {
+      background: #2d8cff;
+      height: 100%;
+      border-radius: 8px;
+    }
+    .resume-right {
+      flex: 2;
+      background: #181a1b;
+      border-radius: 18px;
+      padding: 42px 48px;
+      box-shadow: 0 4px 24px rgba(0,0,0,0.10);
+      min-width: 0;
+    }
+    .resume-right h1 {
+      font-size: 2.2rem;
+      font-weight: bold;
+      letter-spacing: 2px;
+      margin-bottom: 2px;
+      color: #fff;
+    }
+    .resume-right h3 {
+      font-size: 1.05rem;
+      color: #2d8cff;
+      font-weight: 600;
+      margin-bottom: 28px;
+      letter-spacing: 1px;
+    }
+    .resume-right section {
+      margin-bottom: 32px;
+    }
+    .resume-right h2 {
+      font-size: 1.13rem;
+      color: #2d8cff;
+      margin-bottom: 10px;
+      letter-spacing: 1px;
+      border-bottom: 1.5px solid #2d8cff;
+      display: inline-block;
+      padding-bottom: 2px;
+      font-weight: bold;
+    }
+    .resume-right .profile {
+      color: #b0b0b0;
+      font-size: 1.04rem;
+      margin-bottom: 20px;
+    }
+    .resume-right .exp-block,
+    .resume-right .edu-block,
+    .resume-right .cert-block {
+      margin-bottom: 16px;
+    }
+    .resume-right .exp-block strong,
+    .resume-right .edu-block strong,
+    .resume-right .cert-block strong {
+      color: #2d8cff;
+      font-weight: bold;
+    }
+    .resume-right .exp-block .year,
+    .resume-right .edu-block .year,
+    .resume-right .cert-block .year {
+      float: right;
+      font-size: 0.97rem;
+      color: #b0b0b0;
+      font-weight: 400;
+    }
+    .resume-right ul {
+      margin: 8px 0 8px 20px;
+      padding: 0;
+      color: #eaeaea;
+      font-size: 1rem;
+    }
+    .resume-right ul li {
+      margin-bottom: 5px;
+    }
+    @media (max-width: 1050px) {
+      .main-content {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+      }
+      .resume-left, .resume-right {
+        width: 100%;
+        max-width: 100%;
+        border-radius: 0;
+      }
+      .resume-right {
+        padding: 22px 8vw;
+      }
+    }
+    @media (max-width: 700px) {
+      .main-content {
+        padding: 0 4px;
+      }
+      .resume-right {
+        padding: 12px 2vw;
+      }
+      .resume-left {
+        padding: 12px 2vw;
+      }
+      .resume-right h1 {
+        font-size: 1.3rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="portfolio-container">
+    <nav>
+      <div class="logo-text">Portfolio</div>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="resume.html" class="active">About</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropbtn">Certificates</a>
+          <ul class="dropdown-content">
+            <li><a href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/prBZoAihniNijyD6d/oX6f9BbCL9kJDJzfg_prBZoAihniNijyD6d_gApeEsgDs7upEye4g_1748082685096_completion_certificate.pdf">Walmart</a></li>
+            <li><a href="google-certificate.html">Google</a></li>
+          </ul>
+        </li>
+        <li><a href="projects.html">Projects</a></li>
+      </ul>
+    </nav>
+
+    <div class="main-content">
+      <aside class="resume-left">
+        <img src="https://static.toiimg.com/thumb/msid-120097504,width-1280,height-720,resizemode-4/120097504.jpg" alt="Shyam Santhosh" class="profile-img">
+        <h2>CONTACT</h2>
+        <ul>
+          <li><i class="fa fa-phone"></i> 8148783289</li>
+          <li><i class="fa fa-envelope"></i> shyamsanthosh1967@gmail.com</li>
+          <li><i class="fa fa-linkedin"></i> <a href="https://www.linkedin.com/in/shyamsanthosh/" target="_blank">LinkedIn</a></li>
+          <li><i class="fa fa-github"></i> <a href="https://github.com/ShyamSanthosh04" target="_blank">GitHub</a></li>
+        </ul>
+        <div class="section-label">TECHNICAL SKILLS</div>
+        <ul>
+          <li>Languages: Java, Python, C/C++, SQL</li>
+          <li>Machine Learning & Deep Learning: Scikit-learn, TensorFlow, Keras, InceptionNet, CNN</li>
+          <li>Developer Tools: Git, Visual Studio, Eclipse</li>
+          <li>Soft Skills: Critical Thinking, Analytical & Problem Solving, Teamwork, Management</li>
+        </ul>
+
+        <div class="section-label">COURSEWORK</div>
+        <ul>
+          <li>Data Structures and Algorithms</li>
+          <li>Database Management Systems (DBMS)</li>
+          <li>Machine Learning</li>
+          <li>Web Development</li>
+        </ul>
+        <div class="section-label">INTERESTS</div>
+        <ul>
+          <li>Software Engineering</li>
+          <li>Machine Learning</li>
+          <li>Open Source</li>
+          <li>Problem Solving</li>
+        </ul>
+        <div class="section-label">CONNECT</div>
+        <div class="social-icons">
+          <a href="https://www.linkedin.com/in/shyamsanthosh/" target="_blank" title="LinkedIn"><i class="fa fa-linkedin"></i></a>
+          <a href="https://github.com/ShyamSanthosh04" target="_blank" title="GitHub"><i class="fa fa-github"></i></a>
+          <a href="mailto:shyamsanthosh1967@gmail.com" target="_blank" title="Gmail"><i class="fa fa-envelope"></i></a>
+        </div>
+      </aside>
+
+      <main class="resume-right">
+        <h1>Shyam Santhosh</h1>
+        <h3>Software Engineer | Electronics & Computer Engineer</h3>
+        <section>
+          <h2>Profile</h2>
+          <div class="profile">
+            B.Tech student at VIT Chennai with a passion for software engineering, machine learning, and building impactful solutions. Experienced in hackathons, team projects, and real-world applications.
+          </div>
+        </section>
+        <section>
+          <h2>Education</h2>
+          <div class="edu-block">
+            <strong>Vellore Institute of Technology, Chennai</strong>
+            <span class="year">2022–2026</span><br>
+            B.Tech in Electronics and Computer Engineering
+          </div>
+          <div class="edu-block">
+            <em>Relevant Courses:</em> Data Structures and Algorithms, DBMS, OOPS, Digital Electronics, Machine Learning, Deep Learning
+          </div>
+        </section>
+
+        <section>
+          <h2>Experience</h2>
+          <div class="exp-block">
+            <strong>Smart India Hackathon 2023</strong>
+            <span class="year">2023</span>
+            <ul>
+              <li>Developed a GPS-independent, cluster-based vehicle tracking system using Arduino and RF communication.</li>
+              <li>Implemented mesh networking for GPS-restricted environments and real-time data logging with MySQL.</li>
+            </ul>
+          </div>
+
+        <section>
+          <h2>Projects</h2>
+          <div class="exp-block">
+            <strong>Liver Cancer Tumor Detection</strong> | Python, Google Colab, CNN, AlexNet, VGG16, Kaggle
+            <ul>
+              <li>Preprocessed 3D CT scans, trained deep learning models for tumor classification and localization.</li>
+              <li>Built a Faster R-CNN pipeline and visualized predictions with bounding boxes and confidence scores.</li>
+            </ul>
+          </div>
+          <div class="exp-block">
+            <strong>Herbal Plants Classification</strong> | Python, InceptionNet, Google Colab, Kaggle
+            <ul>
+              <li>Developed a CNN-based classifier for herbal plants using transfer learning and dataset augmentation.</li>
+            </ul>
+          </div>
+        </section>
+        <section>
+          <h2>Certifications</h2>
+          <div class="cert-block">
+            <strong>Walmart USA Advanced Software Engineering Virtual Experience Program</strong>
+            <span class="year">May 2025</span>
+            <ul>
+              <li>Completed job simulation solving complex technical projects across teams.</li>
+              <li>Developed a heap data structure in Java, UML class diagrams, and ER diagrams for new databases.</li>
+            </ul>
+          </div>
+        </section>
+      </main>
+    </div>
+  </div>
+</body>
+</html>
